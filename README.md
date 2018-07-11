@@ -1,2 +1,2 @@
 # AboutMeWebsite
-A website that works as an online resume
+A website that works as my online resume
