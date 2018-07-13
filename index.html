@@ -2,23 +2,28 @@
 <html>
   <head>
     <title> Ryan Guido </title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://vignette.wikia.nocookie.net/swfanon/images/9/90/Resistance_logo.png/revision/latest?cb=20160903194719 …" />
+    <script src="/assets/jquery.js"></script>
     <meta charset="utf-8" />
     <link href="/normalize.css" rel="stylesheet">
+
   <style>
-    header {
-      text-align: center;
-      background: url('https://wallpapercave.com/wp/bGdF3Go.jpg');
-      background-size:cover;
-      background-position: center;
-      color: white;
+
+/*
+    div {
+      height: 500px;
+      background-size: cover;
+      position: relative;
+      margin: 25px 0 200px 0;
+      border-radius: 12px;
     }
-    a {
-      color: white;
-    }
+
+*/
+
     h1 {
       font-size: 70px;
     }
-    img {
+    .profile {
       margin: 40px 0px 0px 0px;
       border: 7px solid white;
       border-radius: 20px;
@@ -27,44 +32,239 @@
       padding: 10px;
       background: rgba(0,0,0,0.5);
     }
+
+/*
+    p {
+      color: rgba(255,255,255,1);
+      background: black;
+      font-family: cursive;
+      background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+      background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+      background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+      padding: 10px;
+      padding-right: 450px;
+      line-height: 28px;
+      text-align:justify;
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      height: 0px;
+      transition: height .5s;
+      -webkit-transition: height .5s;
+      -moz-transition: height .5s;
+      height: 10px;
+    }
+*/
+    small {
+      opacity: 0;
+    }
+
     li {
       display: inline;
       padding: 0px 10px 0px 10px;
+      font-size: 25px;
+      text-align: center;
     }
-    article {
-      max-width: 500px;
-      padding: 20px;
-      margin: 0 auto;
+/*
+    div{
+    margin: 20px 12px 0 12px;
+  }
+*/
+
+  @media(max-width:500px){
+    h1{
+      font-size:50px;
+      margin-top:20px;
+      line-height: 40px;
     }
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 36px;
-        padding: 5px;
-      }
-      li {
-        padding: 5px;
-        display: block;
-      }
+
+/*
+    div{
+      margin: 20px 12px 0 12px;
     }
+*/
+    p{
+      font-size: 200px;
+      line-height: 24px;
+    }
+
+    small{
+      font-size: 16px;
+    }
+ }
+    .header {
+      text-align: center;
+      color: white;
+      background: url('https://wallpapercave.com/wp/bGdF3Go.jpg');
+      background-size:cover;
+      background-position: center;
+
+    }
+
+    /*
+    .about{
+      background-image: url("http://dash.ga.co/assets/firstcourse.jpg");
+      height: 185px;
+    }
+
+
+    .employment{
+      background-image: url("http://dash.ga.co/assets/firstcourse.jpg");
+      height: 185px;
+      float:right;
+      clear:both;
+    }
+    .interests{
+       background-image: url("http://dash.ga.co/assets/secondcourse.jpg");
+      height: 185px;
+    }
+    .skills{
+      background-image: url("http://dash.ga.co/assets/dessertcourse.jpg");
+      height: 185px;
+      float:right;
+      clear:both;
+    }
+*/
+/*
+    .show-description p {
+      height: 50px;
+    }
+
+    .show-description small {
+      opacity: 1;
+    }
+
+    .plus {
+      float: right;
+    }
+
+*/
+
+.about{
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+}
+
+.interests{
+  padding-left: 10px;
+  border-radius: 30px;
+}
+
+.employment{
+    float:right;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+}
+
+.skills{
+  float:right;
+  padding-right: 10px;
+  border-radius: 30px;
+}
+
+.about:hover
+{
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+
+.interests:hover
+{
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+
+.employment:hover
+{
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+
+.skills:hover
+{
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+
   </style>
   </head>
 
   <body>
-    <header>
-      <img src="https://media.licdn.com/dms/image/C4D03AQEHpQRwbW95Uw/profile-displayphoto-shrink_200_200/0?e=1536796800&v=beta&t=rB8vLSwKCOtG-rpM52647Ef6Aai3t5ZbnK175uFNhQU">
+    <div class="header">
+
+      <img src="https://media.licdn.com/dms/image/C4D03AQEHpQRwbW95Uw/profile-displayphoto-shrink_200_200/0?e=1536796800&v=beta&t=rB8vLSwKCOtG-rpM52647Ef6Aai3t5ZbnK175uFNhQU" class="profile">
       <h1> Ryan Guido </h1>
       <ul>
-        <li><a href="aboutme.html"> About Me </a></li>
-        <li><a href="#"> next tab </a></li>
-        <li><a href="#"> next tab </a></li>
+        <li> </li>
+        <li> Welcome! </li>
+        <li></li>
       </ul>
-    </header>
+    </div>
 
-    <article>
-      <h2> Hello! Welcome to my website! </h2>
-      <p> More coming soon! </p>
-    </article>
+<!--
+    <div class="about show-description">
+      <p> <a href="aboutme.html"> About Me </a>  <br />
+        <small> Learn a bit about me </small>
+      </p>
+      <a href="aboutme.html">
+        <img src="http://dash.ga.co/assets/firstcourse.jpg" class="about">
+      </a>
+    </div>
 
+    <div class="employment show-description">
+      <p>  <a href="employment.html">Employment/Experience </a>  <br />
+        <small> Explore employment experience </small>
+      </p>
+      <a href="employment.html">
+        <img src="http://dash.ga.co/assets/secondcourse.jpg" class="employment">
+      </a>
+    </div>
+
+    <div class="interests show-description">
+      <p> <a href="interests.html"> Achievements and Interests </a>  <br />
+        <small> Explore achievements + interests </small>
+      </p>
+      <a href="interests.html">
+        <img src="http://dash.ga.co/assets/firstcourse.jpg" class="interests">
+      </a>
+    </div>
+
+    <div class="skills show-description">
+        <p> <a href="skills.html"> Qualifications and Skills </a>  <br />
+          <small> Explore qualifications + skills </small>
+       </p>
+       <a href="skills.html">
+         <img src="http://dash.ga.co/assets/firstcourse.jpg" class="skills">
+       </a>
+    </div>
+
+-->
+<a href="aboutme.html">
+  <img src="https://i.imgur.com/TfyIVAD.png" class="about">
+</a>
+
+<a href="employment.html">
+  <img src="https://i.imgur.com/8OfUm5B.png" class="employment">
+</a>
+
+<a href="interests.html">
+  <img src="https://i.imgur.com/roIvdoX.png" class="interests">
+</a>
+
+<a href="skills.html">
+  <img src="https://i.imgur.com/zGwlQTl.png" class="skills">
+</a>
+<!--  script for future use
+    <script>
+
+      $('div').hover(function() {
+        $(this).toggleClass('show-description');
+      });
+    </script>
+-->
   </body>
 
 </html>
+
