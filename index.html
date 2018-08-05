@@ -2,13 +2,13 @@
 <html>
   <head>
     <title> Ryan Guido </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="https://vignette.wikia.nocookie.net/swfanon/images/9/90/Resistance_logo.png/revision/latest?cb=20160903194719 …" />
     <script src="/assets/jquery.js"></script>
     <meta charset="utf-8" />
     <link href="/normalize.css" rel="stylesheet">
 
   <style>
-
 /*
     div {
       height: 500px;
@@ -17,9 +17,7 @@
       margin: 25px 0 200px 0;
       border-radius: 12px;
     }
-
 */
-
     h1 {
       font-size: 70px;
     }
@@ -32,7 +30,6 @@
       padding: 10px;
       background: rgba(0,0,0,0.5);
     }
-
 /*
     p {
       color: rgba(255,255,255,1);
@@ -58,7 +55,6 @@
     small {
       opacity: 0;
     }
-
     li {
       display: inline;
       padding: 0px 10px 0px 10px;
@@ -70,27 +66,27 @@
     margin: 20px 12px 0 12px;
   }
 */
-
-  @media(max-width:500px){
+  @media screen and (max-width: 800px) {
     h1{
       font-size:50px;
-      margin-top:20px;
-      line-height: 40px;
+      width: 100%;
     }
-
-/*
-    div{
-      margin: 20px 12px 0 12px;
-    }
-*/
+    
     p{
       font-size: 200px;
       line-height: 24px;
     }
-
     small{
       font-size: 16px;
     }
+
+    .about .interests .employment .skills{
+      width: 100%;
+      padding: 0px;
+      border-radius: 0px;
+      float: right;
+    }
+
  }
     .header {
       text-align: center;
@@ -98,73 +94,61 @@
       background: url('https://wallpapercave.com/wp/bGdF3Go.jpg');
       background-size:cover;
       background-position: center;
-
+      max-width:100%;
+      height:auto;
     }
 
-    
 /*
     .show-description p {
       height: 50px;
     }
-
     .show-description small {
       opacity: 1;
     }
-
     .plus {
       float: right;
     }
-
 */
-
 .about{
   padding-left: 10px;
   padding-bottom: 10px;
   border-radius: 30px;
 }
-
 .interests{
   padding-left: 10px;
   border-radius: 30px;
 }
-
 .employment{
     float:right;
     padding-right: 10px;
     padding-bottom: 10px;
     border-radius: 30px;
 }
-
 .skills{
   float:right;
   padding-right: 10px;
   border-radius: 30px;
 }
-
 .about:hover
 {
 	opacity: 0.3;
 	filter: alpha(opacity=30);
 }
-
 .interests:hover
 {
 	opacity: 0.3;
 	filter: alpha(opacity=30);
 }
-
 .employment:hover
 {
 	opacity: 0.3;
 	filter: alpha(opacity=30);
 }
-
 .skills:hover
 {
 	opacity: 0.3;
 	filter: alpha(opacity=30);
 }
-
   </style>
   </head>
 
@@ -184,38 +168,33 @@
     <a href="aboutme.html">
   <img src="https://i.imgur.com/TfyIVAD.png" class="about">
 </a>
-
 <a href="employment.html">
   <img src="https://i.imgur.com/8OfUm5B.png" class="employment">
 </a>
-
 <a href="interests.html">
   <img src="https://i.imgur.com/roIvdoX.png" class="interests">
 </a>
-
 <a href="skills.html">
   <img src="https://i.imgur.com/zGwlQTl.png" class="skills">
 </a>
-
 -->
 <a href="aboutme.html">
-  <img src="about.png" class="about">
+  <img src="about.png" class="about"style="max-width:100%;height:auto;">
 </a>
 
 <a href="employment.html">
-  <img src="employment.png" class="employment">
+  <img src="employment.png" class="employment"style="max-width:100%;height:auto;">
 </a>
 
 <a href="interests.html">
-  <img src="interests.png" class="interests">
+  <img src="interests.png" class="interests"style="max-width:100%;height:auto;">
 </a>
 
 <a href="skills.html">
-  <img src="skills.png" class="skills">
+  <img src="skills.png" class="skills"style="max-width:100%;height:auto;">
 </a>
 <!--  script for future use
     <script>
-
       $('div').hover(function() {
         $(this).toggleClass('show-description');
       });
@@ -224,4 +203,3 @@
   </body>
 
 </html>
-
