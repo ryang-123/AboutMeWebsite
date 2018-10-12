@@ -1,205 +1,358 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title> Ryan Guido </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="https://vignette.wikia.nocookie.net/swfanon/images/9/90/Resistance_logo.png/revision/latest?cb=20160903194719 …" />
-    <script src="/assets/jquery.js"></script>
-    <meta charset="utf-8" />
-    <link href="/normalize.css" rel="stylesheet">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Ryan Guido </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
-  <style>
-/*
-    div {
-      height: 500px;
-      background-size: cover;
-      position: relative;
-      margin: 25px 0 200px 0;
-      border-radius: 12px;
-    }
-*/
-    h1 {
-      font-size: 70px;
-    }
-    .profile {
-      margin: 40px 0px 0px 0px;
-      border: 7px solid white;
-      border-radius: 20px;
-    }
-    ul {
-      padding: 10px;
-      background: rgba(0,0,0,0.5);
-    }
-/*
-    p {
-      color: rgba(255,255,255,1);
-      background: black;
-      font-family: cursive;
-      background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-      background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-      background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-      padding: 10px;
-      padding-right: 450px;
-      line-height: 28px;
-      text-align:justify;
-      position: absolute;
-      bottom: 0;
-      margin: 0;
-      height: 0px;
-      transition: height .5s;
-      -webkit-transition: height .5s;
-      -moz-transition: height .5s;
-      height: 10px;
-    }
-*/
-    small {
-      opacity: 0;
-    }
-    li {
-      display: inline;
-      padding: 0px 10px 0px 10px;
-      font-size: 25px;
-      text-align: center;
-    }
-/*
-    div{
-    margin: 20px 12px 0 12px;
-  }
-*/
-  @media screen and (max-width: 800px) {
-    h1{
-      font-size:50px;
-      width: 100%;
-    }
-    
-    p{
-      font-size: 200px;
-      line-height: 24px;
-    }
-    small{
-      font-size: 16px;
-    }
+	<!--
+			 jquery script source: allows use of jquery -> shortcut js
+		   popper script source: allows use of popper -> pop up templates
+			 bootstrap script source: allows use of bootstrap -> free and open-sourve front-end library with HTML and CSS based designs
+			 fontisawesome script cource: use social media logos
+ -->
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
 
-    .about .interests .employment .skills{
-      width: 100%;
-      padding: 0px;
-      border-radius: 0px;
-      float: right;
-    }
+<!-- Navigation -->
 
- }
-    .header {
-      text-align: center;
-      color: white;
-      background: url('https://wallpapercave.com/wp/bGdF3Go.jpg');
-      background-size:cover;
-      background-position: center;
-      max-width:100%;
-      height:auto;
-    }
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+		data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"> </span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+						<a class="nav-link" href="#about"> About Me </a>
+				</li>
+				<li class="nav-item">
+						<a class="nav-link" href="#skills"> Skills </a>
+				</li>
+				<li class="nav-item">
+						<a class="nav-link" href="#experience"> Experience </a>
+				</li>
+				<li class="nav-item">
+						<a class="nav-link" href="#projects"> Projects </a>
+				</li>
+				<li class="nav-item">
+						<a class="nav-link" href="#connect"> Connect </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
 
-/*
-    .show-description p {
-      height: 50px;
-    }
-    .show-description small {
-      opacity: 1;
-    }
-    .plus {
-      float: right;
-    }
-*/
-.about{
-  padding-left: 10px;
-  padding-bottom: 10px;
-  border-radius: 30px;
-}
-.interests{
-  padding-left: 10px;
-  border-radius: 30px;
-}
-.employment{
-    float:right;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    border-radius: 30px;
-}
-.skills{
-  float:right;
-  padding-right: 10px;
-  border-radius: 30px;
-}
-.about:hover
-{
-	opacity: 0.3;
-	filter: alpha(opacity=30);
-}
-.interests:hover
-{
-	opacity: 0.3;
-	filter: alpha(opacity=30);
-}
-.employment:hover
-{
-	opacity: 0.3;
-	filter: alpha(opacity=30);
-}
-.skills:hover
-{
-	opacity: 0.3;
-	filter: alpha(opacity=30);
-}
-  </style>
-  </head>
+<!--- Welcome Image -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"> </li>
+	</ul>
+<div class="carousel-inner">
+	<div class="carousel-item active">
+		<img src="background.png">
+		<div class="carousel-caption">
+			<h1 class="display-2"> Ryan Guido </h1>
+			<h3> Welcome to my website!</h3>
+		</div>
+	</div>
+</div>
 
-  <body>
-    <div class="header">
+</div>
 
-      <img src="https://media.licdn.com/dms/image/C5603AQE-HY9qtFxMRQ/profile-displayphoto-shrink_200_200/0?e=1538611200&v=beta&t=wRPeuYd25AlYWttCCZVv2LIOCBDViIX9mBEHi-MG_Ec" class="profile">
-      <h1> Ryan Guido </h1>
-      <ul>
-        <li> </li>
-        <li> Welcome! </li>
-        <li></li>
-      </ul>
-    </div>
+<!--- About Me -->
+<div id="about">
+<div class="container-fluid padding">
+<div class="row padding">
+	<div class="col-md-12 col-lg-6">
+		<h2> Hello! </h2>
+		<br>
+		<br>
+		<p>  My name is Ryan Guido. I am 19 years old and am currently pursuing a BSc <br> in computer science at York University.
+			 I have had a passion for computing <br> and software development for a long time now,
+			 which is what motivated <br> me to pursue a computer science degree. I love to learn and create new things.
+			 My hobbies include watching movies and TV shows, sports, video editing, reading, and writing about sports (namely Boxing).
 
-<!--
-    <a href="aboutme.html">
-  <img src="https://i.imgur.com/TfyIVAD.png" class="about">
-</a>
-<a href="employment.html">
-  <img src="https://i.imgur.com/8OfUm5B.png" class="employment">
-</a>
-<a href="interests.html">
-  <img src="https://i.imgur.com/roIvdoX.png" class="interests">
-</a>
-<a href="skills.html">
-  <img src="https://i.imgur.com/zGwlQTl.png" class="skills">
-</a>
--->
-<a href="aboutme.html">
-  <img src="about.png" class="about"style="max-width:100%;height:auto;">
-</a>
+			 I hope you enjoy getting to know a bit about me as you explore my page! <br><br>
 
-<a href="YUconfess.html">
-  <img src="employment.png" class="employment"style="max-width:100%;height:auto;">
-</a>
+			 Education: <br>
+			 York University <br>
+			 Honors Bachelor of Science, Computer science <br>
+			 Expected Graduation: April 2021 <br> <br>
 
-<a href="interests.html">
-  <img src="interests.png" class="interests"style="max-width:100%;height:auto;">
-</a>
+			 Hackathons Attended: <br>
+			 -York U Hacks 2018
 
-<a href="skills.html">
-  <img src="skills.png" class="skills"style="max-width:100%;height:auto;">
-</a>
-<!--  script for future use
-    <script>
-      $('div').hover(function() {
-        $(this).toggleClass('show-description');
-      });
-    </script>
--->
-  </body>
 
+
+			 </p>
+
+	</div>
+
+	<div class="col-lg-6">
+		<img src="aboutpic.png" class="img-fluid">
+	</div>
+</div>
+</div>
+</div>
+<hr class="my-4">
+
+
+<!--- Skills -->
+<div id="skills">
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+	<div class="col-12">
+		<h1 class="display-4"> Skills </h1>
+	</div>
+	<hr>
+	<div class="col-12">
+		<p class="lead"> These are the skills I have acquired up to this point. Check back
+		often as they will continue to grow! </p>
+	</div>
+</div>
+</div>
+
+
+<!--- Skills list -->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+
+	<div class="col-xs-12 col-sm-6 col-md-4">
+		<i class="fab fa-java"></i>
+		<h3> Java </h3>
+	</div>
+
+	<div class="col-xs-12 col-sm-6 col-md-4">
+		<i class="fab fa-python"></i>
+		<h3> Python </h3>
+	</div>
+
+	<div class="col-xs-12 col-sm-6 col-md-4">
+		<i class="fas fa-code"> </i>
+		<h3> HTML5 </h3>
+	</div>
+
+	<div class="col-xs-12 col-sm-6 col-md-4">
+		<i class="fab fa-css3"> </i>
+		<h3> CSS3 </h3>
+	</div>
+
+	<div class="col-xs-12 col-sm-6 col-md-4">
+		<i class="fab fa-js-square"> </i>
+		<h3> JavaScript </h3>
+	</div>
+
+	<div class="col-xs-12 col-sm-6 col-md-4">
+		<i class="fab fa-php"> </i>
+		<h3> PHP </h3>
+	</div>
+
+	<div class="col-xs-12 col-sm-6 col-md-4">
+		<i class="fas fa-database"> </i>
+		<h3> SQL </h3>
+	</div>
+
+	<div class="col-xs-12 col-sm-6 col-md-4">
+		<i class="fas fa-bold"> </i>
+		<h3> Bootstrap </h3>
+	</div>
+
+	<div class="col-xs-12 col-sm-6 col-md-4">
+		<i class="fas fa-terminal"> </i>
+		<h3> Turing </h3>
+	</div>
+
+</div>
+<hr class="my-4">
+</div>
+</div>
+<!--- Fixed background -->
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+		</div>
+	</div>
+</figure>
+
+<!--- Experience -->
+
+<div id="experience">
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+	<div class="col-12">
+		<h1 class="display-4"> Employment Experience </h1>
+	</div>
+	<hr>
+</div>
+</div>
+
+<!--- Experience Cards -->
+<div class="conatiner-fluid padding">
+<div class="row padding">
+
+	<div class="col-md-4">
+		<div class="card">
+			<img class="card-img-top" src="scotia.png">
+			<div class="card-body">
+				<h4 class="card-title"> Scotiabank </h4>
+				<p class="card-text"> Summer 2017, 2018 <br> <br>
+					New Accounts Officer - Client Onboarding <br>
+					-Review important banking documents. <br>
+					-Process account changes and updates via ADTS.<br>
+					-Complete specific and time-sensitive processes for branch workers. <br>
+					-Scan and process new documents into the Scotiabank WebPost system. </p>
+			</div>
+		</div>
+	</div>
+
+  <div class="col-md-4">
+		<div class="card">
+			<img class="card-img-top" src="SP.png">
+			<div class="card-body">
+				<h4 class="card-title"> Sunday Puncher </h4>
+				<p class="card-text">January 2018 - Present <br> <br>
+					Staff Contributor/Writer <br>
+					-Write articles on upcoming boxing events/matches  <br>
+					-Provide media coverage live at boxing events in Ontario <br>
+					-Work alongside other members to produce media content for our various outlets <br>
+					 (Facebook, Twitter, Instagram, YouTube, Reddit)
+
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-4">
+		<div class="card">
+			<img class="card-img-top" src="mcds.png">
+			<div class="card-body">
+				<h4 class="card-title"> McDonald's </h4>
+				<p class="card-text"> January 2014 - Present <br> <br>
+					Crew Trainer <br>
+					-Provide customers with quick and accurate service to the “golden standard” <br>
+					 in which McDonald’s promises. <br>
+					-Prepare and cook a wide variety of food with a broad range of materials and tools. <br>
+					-Required to train any new employees and develop their McDonald’s skills.
+				 </p>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-4">
+		<div class="card">
+			<img class="card-img-top" src="wonderland.png">
+			<div class="card-body">
+				<h4 class="card-title"> Canada's Wonderland </h4>
+				<p class="card-text">  Summer 2016 <br> <br>
+					Line Cook <br>
+					-Cook and prepare all food
+					-Follow proper cleaning and sanitation procedures for both food and non-food surfaces
+					-Address any guest questions about the menu and/or park.
+				 </p>
+			</div>
+		</div>
+	</div>
+
+</div>
+</div>
+</div>
+<!--- Projects -->
+
+<div id="projects">
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+	<div class="col-12">
+		<h1 class="display-4"> Projects </h1>
+	</div>
+	<hr>
+</div>
+</div>
+
+<!--- Project Cards -->
+<div class="conatiner-fluid padding">
+<div class="row padding">
+
+	<div class="col-md-4">
+		<div class="card">
+			<div class="card-body">
+				<h4 class="card-title"> ClubHub </h4> <br>
+				<p class="card-text"> ClubHub is a re-envisioned version of the current York University club website.
+					Users can discover which clubs exist using the search engine or viewing the previously loaded list provided.
+					 Users can then read information regarding the
+					club and add its event information to their Google Calendar if they choose  <br> <br>
+				  Built using HTML, CSS, Google Apps API, Google Sheets, and Google Scripts <br> (**Made at York U Hacks**)</p>
+				<a href="https://github.com/ryang-123/ClubHub" class="btn btn-outline-secondary"> See Project </a>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-4">
+		<div class="card">
+			<div class="card-body">
+				<h4 class="card-title"> Kalamaki's Car Detail Website </h4> <br>
+				<p class="card-text"> A small business website made freelance in coordination with Meizon Solutions.
+					Website includes information regarding all services, contact information, and an image gallery  <br> <br>
+				  Built using HTML, CSS, Popper, and BootStrap</p>
+				<a href="https://github.com/ryang-123/Kalamaki-s-Car-Detail" class="btn btn-outline-secondary"> See Project </a>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-4">
+		<div class="card">
+			<div class="card-body">
+				<h4 class="card-title"> Lumos App </h4> <br>
+				<p class="card-text"> A simple flashlight app originally made in 2017 but updated in 2018.
+					It is Harry Potter themed (ergo the use of "lumos" to light up the tip of the wand.)
+					An image of a wand is clicked to turn on the flashlight. This image is then updated
+					on the device to show the want is lit up as well. <br> <br>
+				  Built using Java and Android Studio </p>
+				<a href="https://github.com/ryang-123/Lumos-App" class="btn btn-outline-secondary"> See Project </a>
+			</div>
+		</div>
+	</div>
+
+</div>
+</div>
+</div>
+
+<!--- Connect -->
+<div id="connect">
+<div class="container-fluid padding">
+<div class="row text-center	padding">
+	<div class ="col-12 social padding">
+		<p> Connect with me </p>
+		<a href="https://www.linkedin.com/in/ryanguido/"> <i class="fab fa-linkedin"></i> </a>
+		<a href="https://github.com/ryang-123"> <i class="fab fa-github"></i> </a>
+		<a href="https://twitter.com/RealDealGuido98"> <i class="fab fa-twitter"> </i> </a>
+		<a href="https://www.instagram.com/ryanguido/"> <i class="fab fa-instagram"></i> </a>
+		<a href="mailto:ryanguido29@gmail.com"> <i class="fas fa-envelope"></i> </a>
+	</div>
+</div>
+</div>
+</div>
+
+<!--- Footer -->
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+	<div class="col-12">
+		<hr class="light-100">
+		<h5> Updated as of October 2018 </h5>
+	</div>
+
+</div>
+</div>
+</footer>
+
+</body>
 </html>
