@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title> Guido Media ~ Gallery </title>
+  <title> Guido Media </title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -78,62 +78,24 @@
 
     <br>
     <br>
+    <div id="about">
+      <div id="aboutMessage"> Welcome to Guido Media! My name is Ryan Guido and I am a photographer for-hire for any
+        occasion! Please have a look at the gallery below or check out testimonials from previous clients! Please feel
+        free to reach out to me via email or Instagram below for any inquiries.
+      </div>
+
+      <div id="aboutSocials">
+        <a href="https://www.instagram.com/guido_media/"> <i class="fab fa-instagram"></i> </a>
+        <a href="mailto:ryanguido29@gmail.com"> <i class="fas fa-envelope"></i> </a>
+      </div>
+      <br>
+      <a href="gallery.html"> <button class="btn active"> Enter Gallery </button>  </a>
+    </div>
+    
+    <!-- TESTIMONIALS BEGIN -->
     <hr>
     <br>
-    <br>
-
-    <h2> Gallery </h2>
-
-    <div id="myBtnContainer">
-      <button class="btn" onclick="filterSelection('all')"> Show all</button>
-      <button class="btn" onclick="filterSelection('portraits')"> Portraits</button>
-      <button class="btn" onclick="filterSelection('action')"> Action</button>
-      <button class="btn" onclick="filterSelection('landscape')"> Other</button>
-    </div>
-
-
-    <div class="tz-gallery">
-      <!-- GALLERY STARTS-->
-
-
-      <div class="row">
-        <!-- START OF ROW -->
-        <script>
-          var portraitCount = 33;
-          for (var i = 1; i <= portraitCount; i++) {
-            if (i % 3 == 0) {
-
-            }
-            var portraitNum = 'p' + i.toString() + '.jpg'
-            var portraitHTML = '<div class="column portraits"><div class="col-sm-6 col-md-4"><a class="lightbox" href="portraits/' + portraitNum +
-              '"><img src="portraits/' + portraitNum + '" alt="1"></a></div></div>'
-            document.write(portraitHTML);
-          }
-
-          var actionCount = 11;
-          for (var i = 1; i <= actionCount; i++) {
-            var actionNum = 'a' + i.toString() + '.jpg'
-            var actionHTML = '<div class="column action"><div class="col-sm-6 col-md-4"><a class="lightbox" href="action/' + actionNum +
-              '"><img src="action/' + actionNum + '" alt="1"></a></div></div>'
-            document.write(actionHTML);
-          }
-
-          var landscapeCount = 1;
-          for (var i = 1; i <= landscapeCount; i++) {
-            var landscapeNum = 'l' + i.toString() + '.jpg'
-            var landscapeHTML = '<div class="column landscape"><div class="col-sm-6 col-md-4"><a class="lightbox" href="landscape/' + landscapeNum +
-              '"><img src="landscape/' + landscapeNum + '" alt="1"></a></div></div>'
-            document.write(landscapeHTML);
-          }
-
-        </script>
-
-      </div> <!-- END OF ROW -->
-
-    </div> <!-- GALLERY ENDS -->
-
-
- 
+    <h2> testimonials </h2>
 
   </div>
 
