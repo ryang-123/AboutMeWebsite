@@ -5,6 +5,58 @@ body {
     padding: 60px 0;
 }
 
+footer {
+  padding-top: 2%;
+  text-align: center;
+}
+
+hr {
+  height: 1px;
+  max-width: 75%;
+  background-color: #333;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+#about {
+  text-align: center;
+}
+#aboutMessage {
+  display: inline-block;
+  text-align: center;
+  max-width: 50%;
+}
+
+#myBtnContainer {
+  text-align: center;
+}
+
+#aboutSocials {
+  padding-top: 2%;
+}
+
+.fa-instagram {
+  color: #517fa4;
+  font-size: 4.5em;
+  padding: 1rem;
+}
+
+.fa-envelope {
+  color: black;
+  font-size: 4.5em;
+  padding: 1rem;
+}
+
+.fa-instagram:hover,.fa-envelope:hover {
+  opacity: 0.3;
+	filter: alpha(opacity=30);
+
+}
+
+
 .container.gallery-container {
     background-color: #fff;
     color: #35373a;

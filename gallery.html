@@ -13,6 +13,9 @@
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
   <link rel="stylesheet" href="gallery-grid.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <link rel="shortcut icon" type="image/png" href="rebel.png" />
 
 
@@ -75,20 +78,33 @@
 
     <br>
     <br>
-    Hello! Welcome to Guido Media! Please have a look at our portfolio below by clicking on "Show All" or navigating to
-    a specific tab, and don't be afraid to check out our <a href="https://www.instagram.com/guido_media/"> Instagram
-    </a> for more of our work and contact information.
+    <div id="about">
+      <div id="aboutMessage"> Welcome to Guido Media! My name is Ryan Guido and I am a photographer for-hire for any
+        occasion! Please have a look at my portfolio below or check out testimonials from previous clients! Please feel
+        free to reach out to me via email or Instagram below for any inquiries.
+      </div>
+
+      <div id="aboutSocials">
+        <a href="https://www.instagram.com/guido_media/"> <i class="fab fa-instagram"></i> </a>
+        <a href="mailto:ryanguido29@gmail.com"> <i class="fas fa-envelope"></i> </a>
+      </div>
+    </div>
+    <hr>
     <br>
     <br>
 
+    <h2> Gallery </h2>
+
     <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('all')"> Show all</button>
       <button class="btn" onclick="filterSelection('portraits')"> Portraits</button>
       <button class="btn" onclick="filterSelection('action')"> Action</button>
       <button class="btn" onclick="filterSelection('landscape')"> Other</button>
     </div>
 
-    <div class="tz-gallery">  <!-- GALLERY STARTS-->
+
+    <div class="tz-gallery">
+      <!-- GALLERY STARTS-->
 
 
       <div class="row">
@@ -97,35 +113,41 @@
           var portraitCount = 33;
           for (var i = 1; i <= portraitCount; i++) {
             if (i % 3 == 0) {
-    
+
             }
             var portraitNum = 'p' + i.toString() + '.jpg'
-            var portraitHTML = '<div class="column portraits"><div class="col-sm-6 col-md-4"><a class="lightbox" href="portraits/' + portraitNum + 
+            var portraitHTML = '<div class="column portraits"><div class="col-sm-6 col-md-4"><a class="lightbox" href="portraits/' + portraitNum +
               '"><img src="portraits/' + portraitNum + '" alt="1"></a></div></div>'
-              document.write(portraitHTML);    
+            document.write(portraitHTML);
           }
-    
+
           var actionCount = 11;
           for (var i = 1; i <= actionCount; i++) {
             var actionNum = 'a' + i.toString() + '.jpg'
-            var actionHTML = '<div class="column action"><div class="col-sm-6 col-md-4"><a class="lightbox" href="action/' + actionNum + 
+            var actionHTML = '<div class="column action"><div class="col-sm-6 col-md-4"><a class="lightbox" href="action/' + actionNum +
               '"><img src="action/' + actionNum + '" alt="1"></a></div></div>'
-              document.write(actionHTML);    
+            document.write(actionHTML);
           }
-    
+
           var landscapeCount = 1;
           for (var i = 1; i <= landscapeCount; i++) {
             var landscapeNum = 'l' + i.toString() + '.jpg'
-            var landscapeHTML = '<div class="column landscape"><div class="col-sm-6 col-md-4"><a class="lightbox" href="landscape/' + landscapeNum + 
+            var landscapeHTML = '<div class="column landscape"><div class="col-sm-6 col-md-4"><a class="lightbox" href="landscape/' + landscapeNum +
               '"><img src="landscape/' + landscapeNum + '" alt="1"></a></div></div>'
-              document.write(landscapeHTML);    
+            document.write(landscapeHTML);
           }
-    
+
         </script>
 
       </div> <!-- END OF ROW -->
 
-    </div>  <!-- GALLERY ENDS -->
+    </div> <!-- GALLERY ENDS -->
+
+
+    <!-- TESTIMONIALS BEGIN -->
+    <hr>
+    <br>
+    <h2> testimonials </h2>
 
   </div>
 
@@ -134,8 +156,11 @@
     baguetteBox.run('.tz-gallery');
   </script>
 
+</body>
+
+<footer>
   Updated as of January 2020 <br>
   &copy; Ryan Guido
-</body>
+</footer>
 
 </html>
