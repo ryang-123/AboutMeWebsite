@@ -1,0 +1,6 @@
+open paint:
+
+resize 75%
+then resize 25%
+
+should be around 972x648 if not cropped and landscape

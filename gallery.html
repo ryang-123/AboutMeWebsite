@@ -87,7 +87,9 @@
     <div id="myBtnContainer">
       <button class="btn" onclick="filterSelection('portraits')"> Portraits</button>
       <button class="btn" onclick="filterSelection('action')"> Action</button>
-      <button class="btn" onclick="filterSelection('landscape')"> Other</button>
+      <button class="btn" onclick="filterSelection('landscape')"> Landscape </button>
+      <button class="btn" onclick="filterSelection('business')"> Business </button>
+      <button class="btn" onclick="filterSelection('other')"> Other </button>
       <button class="btn" onclick="filterSelection('all')"> Show all</button>
     </div>
 
@@ -99,12 +101,13 @@
       <div class="row">
         <!-- START OF ROW -->
         <script>
-          var portraitCount = 33;
-          for (var i = 1; i <= portraitCount; i++) {
-            if (i % 3 == 0) {
-
-            }
-            var portraitNum = 'p' + i.toString() + '.jpg'
+  
+          var portraitPictures = 
+            [
+              1,2,3,4,5,6,7,8,9,10,11,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,41,42,43,44,45,46,47,48,49,50,51,52,53,57,58,60,61,62,63,64,65,66,67,68,69,70,71,72,54,55,56,59,38,39,40
+            ];
+          for (var i = 0; i < portraitPictures.length; i++) {
+            var portraitNum = 'p' + portraitPictures[i]+ '.jpg'
             var portraitHTML = '<div class="column portraits"><div class="col-sm-6 col-md-4"><a class="lightbox" href="portraits/' + portraitNum +
               '"><img src="portraits/' + portraitNum + '" alt="1"></a></div></div>'
             document.write(portraitHTML);
