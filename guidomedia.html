@@ -9,7 +9,7 @@
 
   <title> Guido Media </title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
   <link rel="stylesheet" href="gallery-grid.css">
@@ -79,6 +79,8 @@
     <br>
     <br>
     <div id="about">
+      <!-- ADD IMAGE OF SELF HERE-->
+      <br>
       <div id="aboutMessage"> Welcome to Guido Media! My name is Ryan Guido and I am a photographer for-hire for any
         occasion! Please have a look at the gallery below or check out testimonials from previous clients! Please feel
         free to reach out to me via email or Instagram below for any inquiries.
@@ -93,9 +95,71 @@
     </div>
     
     <!-- TESTIMONIALS BEGIN -->
+    <br>
     <hr>
     <br>
     <h2> testimonials </h2>
+    <section class="testimonials">
+      <div class="test-container">
+        <p class="text-center"> Read below to see what our clients have said in the past. You can be here next!</p>
+
+        <div class="row"> <!-- ROW STARTS -->
+          
+          <script>
+            var testCount = 4;
+
+            var testNames = 
+            [
+              "Abrar",
+              "Christian",
+              "Tony",
+              "Lucas"
+            ];
+
+            var testTitles = 
+            [
+              "Client",
+              "Client",
+              "Client - CEO (Meizon Solutions)",
+              "Client"
+            ];
+            var testStrings = 
+            [
+              "Easily the best experience I had with a photographer to date!!Ryan is super creative and is genuinely a nice guy. I was thrilled to see how the pictures came out. I couldn't possibly recommend working with Ryan more.",
+              "In my experience with the photoshoot with Ryan, he was a true professional who would provide tips on poses, and where to stand to get the perfect picture. It was a great experience and would most definitely recommend him to other people.",
+              "Whenever I need photography work, business or otherwise, I go to Ryan. He is hands down the best photographer I've worked with. He cares, is cost-effective, and relentless in completing the project in a timely manner. Go with Ryan and you won't regret it. ",
+              "This guy is amazing!!!"
+            ];
+
+            var testImages = 
+            [
+              "abrar.jpg",
+              "christian.jpg",
+              "tony.jpg",
+              "lucas.jpg"
+            ];
+
+            for (var i = 0; i < testCount; i++) {
+             
+              var testImage = 't' + i.toString() + '.jpg'
+              var testHTML = '<div class="col-md-4 text-center"><div class="profile"><img src="testimonials/' + testImages[i] + '" class="user">' + 
+              '<blockquote> <span class="quote"> "</span>' + testStrings[i] +  '<span class="quote"> "</span> </blockquote>' +
+              '<h3>' +  testNames[i] + '<br><span>' + testTitles[i] +'</span></h3> </div> </div>'
+            
+          
+              document.write(testHTML);
+            }
+  
+           
+  
+          </script>
+
+        </div> <!-- ROW ENDS -->
+
+      </div>
+    </section>
+
+
 
   </div>
 
@@ -107,7 +171,7 @@
 </body>
 
 <footer>
-  Updated as of January 2020 <br>
+  Updated as of June 2021 <br>
   &copy; Ryan Guido
 </footer>
 

@@ -56,6 +56,58 @@ h2 {
 
 }
 
+.testimonials .row {
+  margin-top: 30px;
+}
+
+.col-md-4 {
+  margin: 40px auto;
+}
+
+.profile {
+  padding: 70px 10px 10px;
+  background-color: #efefef;
+}
+
+.profile:hover {
+  box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.profile img {
+  top: -60px;
+  position: absolute;
+  left: 130px;
+  border: 10px solid white;
+}
+
+.user {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.profile h3 {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #cd373c;
+}
+
+span {
+  font-size: 12px;
+  color: #333;
+}
+
+.quote {
+  font-size: 25px;
+  color: #ffc500;
+}
+
+blockquote {
+
+  font-size: 16px;
+  line-height: 30px;
+}
 
 .container.gallery-container {
     background-color: #fff;
