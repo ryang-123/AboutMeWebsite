@@ -7,6 +7,34 @@ html, body{
   color: #222;
 }
 
+.card-img-top {
+  width: 88%;
+    padding-left: 10%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+
+.card:hover {
+  box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+span {
+  font-size: 12px;
+  color: #333;
+}
+
+blockquote {
+  max-width: 75%;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  padding-left: 16%;
+}
+.quote {
+  font-size: 1.5rem;
+  color: #cd373c;
+}
+
 .navbar{
   padding: .8rem;
 }
@@ -165,12 +193,12 @@ hr.light-100{
 /*---Media Queries --*/
 @media (max-width: 992px) {
 
-  .social a{
+  .social a {
     font-size: 4em;
     padding: 2rem;
   }
+}
 
-  }
 @media (max-width: 768px) {
 
   .carousel-caption{
@@ -232,6 +260,15 @@ hr.light-100{
   .social a{
     font-size:2em;
     padding:0.7rem;
+  }
+
+  .quote {
+    font-size: 1.2rem;
+  }
+
+  blockquote {
+    max-width: 100%;
+    padding-left: 2%;
   }
 
 }
