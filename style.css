@@ -10,8 +10,13 @@ html, body{
 .card-img-top {
   width: 88%;
     padding-left: 10%;
+    padding-top: 5%;
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
+}
+
+.card-title {
+  text-align:center;
 }
 
 .card:hover {
